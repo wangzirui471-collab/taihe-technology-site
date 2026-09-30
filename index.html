@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07131d">
+    <meta name="description" content="泰合技术专注三维感知与视觉融合产品，了解 TH-S02 RGB-D 激光雷达与 TH-MS01 点云工作台。">
+    <title>泰合技术 | 三维感知与视觉融合</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script type="module" src="assets/js/site.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳转到主要内容</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="泰合技术首页">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><path d="M9 12h26M22 12v21M12 22h20M13 33l9-9 9 9"/><circle cx="22" cy="12" r="3"/><circle cx="12" cy="22" r="2"/><circle cx="32" cy="22" r="2"/></svg>
+        </span>
+        <span class="brand-words"><strong>泰合技术</strong><small>TAIHE TECHNOLOGY · 3D VISION</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle>
+        <span></span><span></span><span class="visually-hidden">打开导航菜单</span>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="主导航" data-site-nav>
+        <a href="#products">产品中心</a>
+        <a href="#capabilities">技术能力</a>
+        <a href="#applications">应用方向</a>
+        <a href="#about">关于泰合</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero hero-home" aria-labelledby="home-title">
+        <div class="hero-backdrop" aria-hidden="true">
+          <div class="backdrop-orbit orbit-one"></div>
+          <div class="backdrop-orbit orbit-two"></div>
+          <div class="backdrop-glow"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> TAIHE · SPATIAL SENSING</p>
+          <h1 id="home-title">让空间<br><em>更可感知</em></h1>
+          <p class="hero-lede">从 dToF 深度感知，到 RGB 与惯性信息融合。泰合技术以三维视觉产品，连接真实场景与数字空间。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="s02.html">探索 TH-S02 <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="#products">浏览产品 <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-spec-strip" aria-label="TH-S02 核心参数">
+            <span><strong>256 × 192</strong><small>LiDAR 分辨率</small></span>
+            <span><strong>120° × 90°</strong><small>视场角</small></span>
+            <span><strong>RGB + IMU</strong><small>多源数据输出</small></span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="三维感知视场原理示意">
+          <div class="visual-label visual-label-top"><span>DEPTH FIELD</span><b>TH—S02 / 01</b></div>
+          <svg class="hero-scan" viewBox="0 0 680 520" role="img" aria-label="由点阵和线框构成的三维视场原理图，不代表实时采集数据">
+            <defs>
+              <linearGradient id="scan-line" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#68e1dc"/><stop offset=".55" stop-color="#3696df"/><stop offset="1" stop-color="#b1f5c1"/></linearGradient>
+              <radialGradient id="scan-glow"><stop stop-color="#56dce3" stop-opacity=".22"/><stop offset="1" stop-color="#56dce3" stop-opacity="0"/></radialGradient>
+              <pattern id="scan-dots" width="13" height="13" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#82e6e2" opacity=".8"/></pattern>
+            </defs>
+            <ellipse cx="354" cy="270" rx="285" ry="220" fill="url(#scan-glow)"/>
+            <g fill="none" stroke="url(#scan-line)" stroke-width="1.3" opacity=".58">
+              <path d="M110 142 336 215 575 126M110 142 120 360 355 430 575 365 575 126M120 360 336 215 355 430M336 215 575 365"/>
+              <path d="m110 142 122-38 238 8 105 14M120 360l85-82 212-63 158 50M205 278l8 115m92-148 2 159m92-190 1 197m93-220 63 174" opacity=".55"/>
+              <path d="M125 190 548 174M122 232 555 219M121 274 563 263M121 318 570 309M155 381 530 377" stroke-dasharray="3 8"/>
+            </g>
+            <path d="M110 142 336 215 575 126 575 365 355 430 120 360Z" fill="url(#scan-dots)" opacity=".72"/>
+            <g fill="#95f0df">
+              <circle cx="336" cy="215" r="4"/><circle cx="575" cy="126" r="3"/><circle cx="575" cy="365" r="3"/><circle cx="355" cy="430" r="3"/><circle cx="120" cy="360" r="3"/>
+            </g>
+            <g fill="none" stroke="#72d8e2" stroke-width="1" opacity=".42"><circle cx="336" cy="215" r="31"/><circle cx="336" cy="215" r="54"/><circle cx="336" cy="215" r="77"/></g>
+            <g fill="#a9c7db" font-family="Arial, sans-serif" font-size="10" letter-spacing="2"><text x="92" y="132">NEAR</text><text x="580" y="119">FOV</text><text x="358" y="449">DEPTH MAP</text></g>
+          </svg>
+          <div class="visual-label visual-label-bottom"><span>原理示意 · 非实时采集</span><span>120° × 90° <i>◉</i></span></div>
+          <div class="visual-index" aria-hidden="true">01</div>
+        </div>
+      </section>
+
+      <section class="trust-ribbon" aria-label="产品组合">
+        <span>空间感知</span><i></i><span>RGB-D 融合</span><i></i><span>工业视觉</span><i></i><span>开放集成</span>
+      </section>
+
+      <section class="section section-products" id="products" aria-labelledby="products-title">
+        <div class="section-heading">
+          <div><p class="eyebrow eyebrow-dark">01 / PRODUCT CENTER</p><h2 id="products-title">为三维感知而构建</h2></div>
+          <p>从传感器到点云工作台<br>让深度数据更容易进入应用</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card product-card-main">
+            <div class="product-card-top"><span class="product-kicker">RGB-D · dToF</span><span class="product-number">01</span></div>
+            <div class="product-art product-art-s02" aria-hidden="true">
+              <svg viewBox="0 0 500 270">
+                <defs><linearGradient id="product-field" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#69e1dc"/><stop offset=".5" stop-color="#449fe4"/><stop offset="1" stop-color="#c4f1c9"/></linearGradient><radialGradient id="product-field-glow"><stop stop-color="#5addd9" stop-opacity=".2"/><stop offset="1" stop-color="#5addd9" stop-opacity="0"/></radialGradient></defs>
+                <ellipse cx="252" cy="143" rx="219" ry="127" fill="url(#product-field-glow)"/>
+                <g fill="none" stroke="url(#product-field)" stroke-width="1.2" opacity=".74"><path d="m80 69 169 56 175-57M80 69l6 129 162 54 176-55V68M86 198l163-73 175 72M249 125v127M127 85l2 126m75-104v137m90-108 2 134m82-160 5 147"/><path d="M85 103 422 101M86 137l336 1M87 170l336 3M112 214l282-10" stroke-dasharray="3 7"/></g>
+                <g fill="#b7f4da"><circle cx="80" cy="69" r="3"/><circle cx="249" cy="125" r="4"/><circle cx="424" cy="68" r="3"/><circle cx="86" cy="198" r="3"/><circle cx="411" cy="197" r="3"/><circle cx="249" cy="252" r="3"/></g>
+                <g fill="none" stroke="#64d7dc" opacity=".47"><circle cx="249" cy="125" r="24"/><circle cx="249" cy="125" r="45"/><circle cx="249" cy="125" r="66"/></g>
+                <path d="M249 125 80 69m169 56 175-57m-175 57 162 129m-162-129-163 73" stroke="#e1fff0" stroke-width="1" stroke-dasharray="2 6" opacity=".65"/>
+              </svg>
+              <span class="art-note">dToF 视场原理示意 · 非实时采集</span>
+            </div>
+            <div class="product-card-body"><div><h3>TH-S02</h3><p>3D 全固态 RGB-D 激光雷达</p></div><a class="arrow-link" href="s02.html" aria-label="了解 TH-S02">了解产品 <span aria-hidden="true">↗</span></a></div>
+            <div class="product-card-stats"><span><b>256 × 192</b><small>LiDAR 分辨率</small></span><span><b>5 MP HDR</b><small>RGB 相机</small></span><span><b>6 轴 IMU</b><small>惯性数据</small></span></div>
+          </article>
+          <article class="product-card product-card-ms01">
+            <div class="product-card-top"><span class="product-kicker">POINT CLOUD · VIEWER</span><span class="product-number">02</span></div>
+            <div class="ms01-art" aria-hidden="true">
+              <div class="ms01-screen"><span class="screen-dot"></span><span class="screen-dot"></span><span class="screen-dot"></span><div class="screen-cloud"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+              <div class="screen-stand"></div><div class="screen-base"></div>
+              <span class="ms01-coordinate">X 0.31&nbsp;&nbsp; Y 0.08&nbsp;&nbsp; Z 1.24</span>
+            </div>
+            <div class="product-card-body"><div><h3>TH-MS01</h3><p>三维点云可视化工作台</p></div><a class="arrow-link" href="https://wangzirui471-collab.github.io/-/" target="_blank" rel="noopener noreferrer" aria-label="在新窗口打开 TH-MS01 点云工作台">打开工作台 <span aria-hidden="true">↗</span></a></div>
+            <p class="product-card-note">在线查看点云 · 本机文件由浏览器本地读取</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-capabilities" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-heading section-heading-inverse">
+          <div><p class="eyebrow">02 / SENSOR FUSION</p><h2 id="capabilities-title">让不同维度的数据<br>协同工作</h2></div>
+          <p>一台设备，融合深度、彩色与运动状态信息。<br>通过标准输出和软件接口，接入你的系统。</p>
+        </div>
+        <div class="capability-layout">
+          <div class="capability-visual" aria-hidden="true">
+            <svg viewBox="0 0 600 440">
+              <defs><radialGradient id="cap-glow"><stop stop-color="#44ded7" stop-opacity=".24"/><stop offset="1" stop-color="#44ded7" stop-opacity="0"/></radialGradient></defs>
+              <circle cx="300" cy="220" r="175" fill="url(#cap-glow)"/>
+              <g fill="none" stroke="#64d8df" stroke-width="1" opacity=".55"><path d="M106 121 300 77l194 44v198l-194 44-194-44z"/><path d="M106 121l194 102 194-102M106 319l194-96 194 96M300 77v146m0 0v140M154 143v155m97-198v242m98-242v242m97-199v155"/><path d="M125 168h350M111 218h378M119 268h362" stroke-dasharray="2 7"/></g>
+              <g fill="#aaf7d8"><circle cx="300" cy="77" r="3"/><circle cx="106" cy="121" r="3"/><circle cx="494" cy="121" r="3"/><circle cx="106" cy="319" r="3"/><circle cx="494" cy="319" r="3"/><circle cx="300" cy="363" r="3"/></g>
+              <g stroke="#64d8df" stroke-width="1" opacity=".45"><path d="M281 223h38M300 204v38"/><circle cx="300" cy="223" r="16" fill="none"/><circle cx="300" cy="223" r="31" fill="none"/></g>
+            </svg>
+            <div class="capability-readout"><span>DATA STREAM</span><b>LiDAR <i>+</i> RGB <i>+</i> IMU</b></div>
+          </div>
+          <div class="capability-list">
+            <article><span class="capability-index">01</span><div><h3>深度 · dToF</h3><p>256 × 192 分辨率、120° × 90° 视场，输出三维激光点云。</p></div><span class="capability-mark">↗</span></article>
+            <article><span class="capability-index">02</span><div><h3>色彩 · RGB</h3><p>内置 5 MP HDR 彩色相机，与深度信息共同描述场景。</p></div><span class="capability-mark">↗</span></article>
+            <article><span class="capability-index">03</span><div><h3>姿态 · IMU</h3><p>集成 6 轴 IMU，提供运动状态数据。</p></div><span class="capability-mark">↗</span></article>
+            <article><span class="capability-index">04</span><div><h3>集成 · Linux / ROS</h3><p>支持 RGB-D Linux/ROS SDK，便于接入自有应用。</p></div><span class="capability-mark">↗</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-applications" id="applications" aria-labelledby="applications-title">
+        <div class="section-heading">
+          <div><p class="eyebrow eyebrow-dark">03 / APPLICATION DIRECTIONS</p><h2 id="applications-title">从空间数据，走向现场应用</h2></div>
+          <p>应用方向示意。实际效果取决于场景、安装方式与系统集成。</p>
+        </div>
+        <div class="application-grid">
+          <article class="application-card"><div class="application-icon" aria-hidden="true">⌁</div><span>01 / ROBOTICS</span><h3>机器人环境感知</h3><p>将周边空间的深度信息引入移动设备与自动化系统。</p><div class="application-lines" aria-hidden="true"></div></article>
+          <article class="application-card"><div class="application-icon" aria-hidden="true">⌗</div><span>02 / SPATIAL DATA</span><h3>三维场景建模</h3><p>结合点云与 RGB 数据，构建面向应用的场景表达。</p><div class="application-lines application-lines-two" aria-hidden="true"></div></article>
+          <article class="application-card"><div class="application-icon" aria-hidden="true">⟐</div><span>03 / INTEGRATION</span><h3>设备系统集成</h3><p>通过以太网与 Linux/ROS SDK，连接上层软件与设备流程。</p><div class="application-lines application-lines-three" aria-hidden="true"></div></article>
+        </div>
+      </section>
+
+      <section class="section section-fov" aria-labelledby="fov-title">
+        <div class="fov-copy">
+          <p class="eyebrow eyebrow-dark">04 / FIELD OF VIEW</p>
+          <h2 id="fov-title">先看视场<br>再看空间</h2>
+          <p>TH-S02 的视场角为 120° × 90°。拖动线框可从不同方向理解视场范围；此图仅作原理示意，不代表设备实时采集结果。</p>
+          <a class="text-link" href="s02.html#field-of-view">查看产品页中的交互视场 <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="fov-demo" data-fov-demo>
+          <div class="fov-stage">
+            <canvas class="fov-canvas" width="840" height="520" tabindex="0" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown" aria-label="TH-S02 120度乘90度视场原理示意，使用方向键旋转，鼠标或触摸拖动旋转查看"></canvas>
+            <div class="fov-badge"><span class="status-dot"></span> 120° × 90° / dToF</div>
+            <p class="fov-caveat">原理示意，非实时实测数据</p>
+          </div>
+          <div class="fov-controls">
+            <label for="home-fov-distance">示意距离 <strong data-fov-distance-label>30 m @ 10% indoor</strong></label>
+            <input id="home-fov-distance" type="range" min="5" max="70" step="1" value="30" data-fov-distance aria-label="调节视场示意距离">
+            <button type="button" class="reset-button" data-fov-reset>重置视角 <span aria-hidden="true">↺</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-about" id="about" aria-labelledby="about-title">
+        <div class="about-aside"><p class="eyebrow eyebrow-dark">05 / ABOUT TAIHE</p><span class="about-aside-mark" aria-hidden="true">TH<span>·</span></span></div>
+        <div class="about-main"><h2 id="about-title">深度、色彩与运动信息，<br>在同一空间里相遇。</h2><p>泰合技术围绕三维感知与视觉融合产品，连接传感器、数据与软件应用。我们以真实产品参数为基础，为研发团队和系统集成伙伴提供清晰、可对接的产品信息。</p><a class="text-link" href="s02.html">了解 TH-S02 <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="contact-band" aria-labelledby="explore-title">
+        <div><p class="eyebrow">EXPLORE / TH-S02</p><h2 id="explore-title">探索更宽广的深度视野。</h2><p>查看 TH-S02 的完整参数、接口配置与视场示意。</p></div>
+        <div class="contact-action"><a class="button button-light" href="s02.html">查看 TH-S02 产品 <span aria-hidden="true">↗</span></a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand-footer" href="index.html" aria-label="泰合技术首页"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M9 12h26M22 12v21M12 22h20M13 33l9-9 9 9"/><circle cx="22" cy="12" r="3"/><circle cx="12" cy="22" r="2"/><circle cx="32" cy="22" r="2"/></svg></span><span class="brand-words"><strong>泰合技术</strong><small>TAIHE TECHNOLOGY</small></span></a>
+      <p>三维感知 · RGB-D 融合 · 工业视觉</p>
+      <div class="footer-links"><a href="s02.html">TH-S02 产品</a><a href="https://wangzirui471-collab.github.io/-/" target="_blank" rel="noopener noreferrer">TH-MS01 工作台</a></div>
+      <small class="copyright">© <span data-current-year>2026</span> 泰合技术. 产品参数请以正式技术资料为准。</small>
+    </footer>
+  </body>
+</html>
+

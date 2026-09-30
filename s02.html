@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07131d">
+    <meta name="description" content="TH-S02 是一款基于 dToF 的 3D 全固态 RGB-D 激光雷达，集成 5 MP RGB 相机与六轴 IMU。">
+    <title>TH-S02 RGB-D 激光雷达 | 泰合技术</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script type="module" src="assets/js/site.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳转到主要内容</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="泰合技术首页">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M9 12h26M22 12v21M12 22h20M13 33l9-9 9 9"/><circle cx="22" cy="12" r="3"/><circle cx="12" cy="22" r="2"/><circle cx="32" cy="22" r="2"/></svg></span>
+        <span class="brand-words"><strong>泰合技术</strong><small>TAIHE TECHNOLOGY · 3D VISION</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle><span></span><span></span><span class="visually-hidden">打开导航菜单</span></button>
+      <nav class="site-nav" id="site-navigation" aria-label="主导航" data-site-nav>
+        <a href="index.html#products">产品中心</a>
+        <a href="index.html#capabilities">技术能力</a>
+        <a href="index.html#applications">应用方向</a>
+        <a href="index.html#about">关于泰合</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="product-hero" aria-labelledby="s02-title">
+        <div class="product-hero-grid" aria-hidden="true"></div>
+        <div class="product-hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> TH-SERIES / RGB-D SENSOR</p>
+          <h1 id="s02-title">TH-S02</h1>
+          <p class="product-hero-subtitle">3D 全固态 RGB-D 激光雷达</p>
+          <p class="product-hero-lede">基于 dToF 深度方案，集成宽动态 RGB 相机与六轴 IMU；让深度、色彩与运动状态信息，共同进入你的三维感知系统。</p>
+          <div class="hero-actions"><a class="button button-primary" href="#specifications">查看产品参数 <span aria-hidden="true">↓</span></a><a class="button button-quiet" href="#field-of-view">查看视场示意 <span aria-hidden="true">↗</span></a></div>
+          <div class="product-hero-tags"><span>dToF</span><span>5 MP HDR</span><span>6-axis IMU</span><span>Linux / ROS</span></div>
+        </div>
+        <figure class="product-hero-photo">
+          <div class="photo-frame"><img src="assets/images/s02-interface-cable.png" alt="TH-S02 说明书所示的设备后部与线缆连接实物图；此图展示线缆和接口侧，不代表产品正面外观"></div>
+          <figcaption><span>PRODUCT DETAIL / CABLE & CONNECTOR</span><span>说明书实物图</span></figcaption>
+        </figure>
+        <div class="hero-vertical-label" aria-hidden="true">TAIHE · SPATIAL SENSING · 2026</div>
+      </section>
+
+      <section class="product-intro section" aria-labelledby="s02-intro-title">
+        <div class="product-intro-label"><p class="eyebrow eyebrow-dark">01 / OVERVIEW</p><span>TH—S02</span></div>
+        <div class="product-intro-main"><h2 id="s02-intro-title">一体化感知，<br><em>从深度开始。</em></h2><p>TH-S02 是一款 dToF 3D 全固态 RGB-D 激光雷达。设备内部集成 500 万像素宽动态 RGB 相机与 IMU，支持激光点云与 RGB 图像的空间融合，并可输出运动姿态信息。</p><div class="intro-footnote">内容依据《TH-S02 3D全固态RGBD激光雷达产品使用说明书 V1.3》整理。</div></div>
+      </section>
+
+      <section class="section section-specs" id="specifications" aria-labelledby="specs-title">
+        <div class="section-heading">
+          <div><p class="eyebrow eyebrow-dark">02 / TECHNICAL SPECIFICATIONS</p><h2 id="specs-title">参数一览</h2></div>
+          <p>关键工作条件与配置属性一并标注。<br>具体以正式产品资料与订购配置为准。</p>
+        </div>
+        <div class="spec-hero-grid">
+          <article class="spec-highlight spec-highlight-primary"><span>最大探测范围</span><strong>70 <small>m</small></strong><p>标称最大探测范围</p><div class="spec-line"></div></article>
+          <article class="spec-highlight"><span>有效视场</span><strong>120° <small>×</small> 90°</strong><p>LiDAR / RGB 视场角</p><div class="spec-line"></div></article>
+          <article class="spec-highlight"><span>LiDAR 分辨率</span><strong>256 <small>×</small> 192</strong><p>dToF 深度数据</p><div class="spec-line"></div></article>
+          <article class="spec-highlight"><span>同步感知</span><strong>5 <small>MP</small></strong><p>HDR RGB + 六轴 IMU</p><div class="spec-line"></div></article>
+        </div>
+        <p class="range-condition"><span aria-hidden="true">ⓘ</span> 说明书标注探测范围 0.5–70 m；30 m @ 10% indoor 为备注条件，实际效果受目标反射率与环境影响。</p>
+        <div class="spec-table-wrap">
+          <div class="spec-group">
+            <div class="spec-group-heading"><span>01</span><h3>深度感知</h3><small>LiDAR / dToF</small></div>
+            <dl class="spec-list">
+              <div><dt>技术方案</dt><dd>dToF</dd></div>
+              <div><dt>分辨率</dt><dd>256 × 192 px</dd></div>
+              <div><dt>视场角</dt><dd>120° × 90°</dd></div>
+              <div><dt>角分辨率</dt><dd>0.5°</dd></div>
+              <div><dt>激光波长</dt><dd>940 nm ± 15 nm</dd></div>
+              <div><dt>激光安全等级</dt><dd>Class 1</dd></div>
+              <div><dt>探测范围</dt><dd>0.5–70 m</dd></div>
+              <div><dt>探测精度</dt><dd>±30 mm @ 1σ</dd></div>
+              <div><dt>帧率</dt><dd>10 FPS</dd></div>
+            </dl>
+          </div>
+          <div class="spec-group">
+            <div class="spec-group-heading"><span>02</span><h3>融合感知</h3><small>RGB / IMU / SDK</small></div>
+            <dl class="spec-list">
+              <div><dt>RGB 相机</dt><dd>500 万像素</dd></div>
+              <div><dt>图像特性</dt><dd>HDR · Electronic rolling shutter</dd></div>
+              <div><dt>RGB 视场角</dt><dd>120° × 90°</dd></div>
+              <div><dt>惯性测量单元</dt><dd>6 轴 IMU</dd></div>
+              <div><dt>数据输出</dt><dd>激光点云、RGB、IMU</dd></div>
+              <div><dt>软件支持</dt><dd>Linux/ROS SDK for RGB-D</dd></div>
+            </dl>
+          </div>
+          <div class="spec-group spec-group-wide">
+            <div class="spec-group-heading"><span>03</span><h3>接口与供电</h3><small>INTERFACE / POWER</small></div>
+            <div class="interface-configs">
+              <article class="interface-config" data-status="standard"><span class="status-label">标准配置</span><h4>1× Gigabit Ethernet</h4><p>单千兆以太网 × 1</p></article>
+              <article class="interface-config" data-status="custom"><span class="status-label">可定制</span><h4>Dual Gigabit Ethernet</h4><p>双千兆以太网</p></article>
+              <article class="interface-config" data-status="reserved"><span class="status-label">预留 / 信号</span><h4>CAN · NPN I/O</h4><p>CAN 通信预留；NPN input × 2、NPN output × 2</p></article>
+            </div>
+            <dl class="spec-list spec-list-compact">
+              <div><dt>供电输入</dt><dd>DC 14–30 V（推荐 24 V）</dd></div>
+              <div><dt>稳态功耗</dt><dd>≤ 10 W</dd></div>
+              <div><dt>通讯接口</dt><dd>标准千兆以太网 × 1</dd></div>
+            </dl>
+          </div>
+          <div class="spec-group">
+            <div class="spec-group-heading"><span>04</span><h3>环境与结构</h3><small>ENVIRONMENT / BODY</small></div>
+            <dl class="spec-list">
+              <div><dt>防护等级</dt><dd>IP65 <span class="inline-badge">标准</span></dd></div>
+              <div><dt>可选防护</dt><dd>IP67 <span class="inline-badge inline-badge-custom">可定制</span></dd></div>
+              <div><dt>工作温度</dt><dd>−20–65 °C</dd></div>
+              <div><dt>存储温度</dt><dd>−25–75 °C</dd></div>
+              <div><dt>抗环境光</dt><dd>80,000 lx</dd></div>
+              <div><dt>散热方式</dt><dd>自然散热</dd></div>
+              <div><dt>外形尺寸</dt><dd>118 × 52 × 63 mm</dd></div>
+              <div><dt>重量</dt><dd>≤ 700 g</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-fov product-fov-section" id="field-of-view" aria-labelledby="product-fov-title">
+        <div class="fov-copy"><p class="eyebrow eyebrow-dark">03 / FIELD OF VIEW</p><h2 id="product-fov-title">120° × 90°<br>视场示意</h2><p>通过交互线框观察深度感知视场的空间形态。该视图为几何原理示意，不代表实时实测数据。</p><div class="fov-legend"><span><i></i>水平视场 120°</span><span><i></i>垂直视场 90°</span></div></div>
+        <div class="fov-demo" data-fov-demo>
+          <div class="fov-stage"><canvas class="fov-canvas" width="840" height="520" tabindex="0" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown" aria-label="TH-S02 120度乘90度视场原理示意，使用方向键旋转，鼠标或触摸拖动旋转查看"></canvas><div class="fov-badge"><span class="status-dot"></span> LiDAR / dToF</div><p class="fov-caveat">原理示意，非实时实测数据</p></div>
+          <div class="fov-controls"><label for="s02-fov-distance">示意距离 <strong data-fov-distance-label>30 m @ 10% indoor</strong></label><input id="s02-fov-distance" type="range" min="5" max="70" step="1" value="30" data-fov-distance aria-label="调节视场示意距离"><button type="button" class="reset-button" data-fov-reset>重置视角 <span aria-hidden="true">↺</span></button></div>
+        </div>
+      </section>
+
+      <section class="section section-connection" aria-labelledby="connection-title">
+        <div class="section-heading"><div><p class="eyebrow eyebrow-dark">04 / MECHANICAL & CONNECTION</p><h2 id="connection-title">结构与连接</h2></div><p>以下尺寸与线缆图片整理自产品说明书。<br>请以实际产品批次及配置为准。</p></div>
+        <div class="detail-grid">
+          <figure class="detail-card detail-dimensions"><div class="detail-image detail-image-dimensions"><img src="assets/images/s02-dimensions.png" alt="TH-S02 产品结构尺寸图，展示设备多个视角及安装孔位，单位为毫米"></div><figcaption><div><span class="detail-index">FIG. 01</span><h3>外形尺寸</h3></div><p>118 × 52 × 63 mm</p></figcaption></figure>
+          <figure class="detail-card detail-cable"><div class="detail-image"><img src="assets/images/s02-interface-cable.png" alt="TH-S02 说明书中的设备与以太网及电源控制线缆实物图"></div><figcaption><div><span class="detail-index">FIG. 02</span><h3>线缆与接口示意</h3></div><p>千兆以太网 / 电源与控制</p></figcaption></figure>
+        </div>
+        <p class="image-source-note">图示摘录自《TH-S02 3D全固态RGBD激光雷达产品使用说明书 V1.3》；本站展示部分图示，完整说明书暂未提供下载。</p>
+      </section>
+
+      <section class="product-cta" aria-labelledby="product-explore-title">
+        <div><p class="eyebrow">EXPLORE / TAIHE</p><h2 id="product-explore-title">让深度数据<br>走进真实场景。</h2><p>继续了解泰合技术的三维感知产品与点云展示。</p></div>
+        <div class="cta-aside"><a class="button button-light" href="index.html">返回公司首页 <span aria-hidden="true">↗</span></a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand brand-footer" href="index.html" aria-label="泰合技术首页"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M9 12h26M22 12v21M12 22h20M13 33l9-9 9 9"/><circle cx="22" cy="12" r="3"/><circle cx="12" cy="22" r="2"/><circle cx="32" cy="22" r="2"/></svg></span><span class="brand-words"><strong>泰合技术</strong><small>TAIHE TECHNOLOGY</small></span></a><p>TH-S02 · 3D 全固态 RGB-D 激光雷达</p><div class="footer-links"><a href="index.html#products">产品中心</a><a href="https://wangzirui471-collab.github.io/-/" target="_blank" rel="noopener noreferrer">TH-MS01 工作台</a></div><small class="copyright">© <span data-current-year>2026</span> 泰合技术. 参数以正式技术资料为准。</small></footer>
+  </body>
+</html>
+
